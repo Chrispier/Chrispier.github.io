@@ -1,0 +1,31 @@
+Header:
+-Educator
+-Programmer
+-Photographer
+-More
+--Light/Dark Mode
+
+Home:
+-Showcase a project
+-1 sentence about
+
+Educator:
+-Background
+-Intro to Computer Science
+-Algorithms
+-Discovery with Proofs
+-Web Design
+-Math 7
+
+Programmer:
+-Background
+-Projects
+-Github
+-Web Design
+
+Photographer:
+-Background
+-Gallery
+
+More:
+-About Me
