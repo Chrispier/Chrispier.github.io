@@ -54,6 +54,7 @@ a{
 }
 .footer{
     display:flex;
+    flex-shrink: none;
     justify-content: right;
     padding: 8px;
     background: #D1F0B1;

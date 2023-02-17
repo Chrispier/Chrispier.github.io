@@ -1,3 +1,5 @@
+Chris S Park --> CS Park
+
 Header:
 -Educator
 -Programmer
@@ -11,11 +13,29 @@ Home:
 
 Educator:
 -Background
+--Philosophy
+--References
+--Mission
 -Intro to Computer Science
--Algorithms
+--Philosophy
+--Resources-Python
+--Sample Lesson
+-Algorithms and Beyond
+--Philosophy
+--Resources
+--Sample Lesson
 -Discovery with Proofs
+--Philosophy
+--Resources
+--Sample Lesson
 -Web Design
+--Philosophy
+--Resources
+--Sample Lesson
 -Math 7
+--Philosophy
+--Resources
+--Sample Lesson
 
 Programmer:
 -Background
