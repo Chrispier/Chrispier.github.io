@@ -3,20 +3,24 @@
     <head> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="iwdth=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chris Park</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <script defer src="script.js"></script>
     </head>
 <body>
     <div class="header">
     <!-- header with tabs and features -->
     <a href="../Chrispier.github.io/index.html"><div class="logo">Chris S Park</div></a>
         <!-- Goes back to the home page -->
-        <ul>
+        <ul id="navigation">
             <li><a href="./educator.html">Educator</a></li>
             <li><a href="./programmer.html">Programmer</a></li>
             <li><a href="./photographer.html">Photographer</a></li>
             <li><a href="./more.html">More</a></li>
+            <li><button onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div>
+                </button></li>
         </ul>
     <!-- TODO: make a light/dark mode button and a contact me -->
     </div>
@@ -25,8 +29,129 @@
         <div class="sidebar">
 
         </div>
-        <div class="info">Hello, I am an educator. Welcome to my website.</div>
-    </div>
+        <div class="main">
+            <div class="intro">
+                <div class="name">Hello, my name is Chris S Park.</div>
+                <div class="bio">
+                    <p>I am a computer science and mathematics teacher.</p>
+                    <p>Here is my teaching portfolio.</p>
+                </div>
+            </div>
+            <div class="index">
+                <div class="title">Portfolio</div>
+                <div class="contents"><a href=#Philosophy>Philosophy</a> • <a href=#Skills>Skills</a> • <a href=#Subjects>Subjects</a> • <a href=#Experience>Experience</a> • <a href=#Education>Education</a></div>
+            </div>
+            <div class="section">
+                <a class="heading", id="Philosophy">Philosophy</a>
+                <div class="subheader">Focus</div>
+                <div class="list" id="Focus">
+                    <p>As a teacher, I am to assist students in develop critical thinking skills to develop a process for any problem.</p>
+                    <ul>
+                        <li>Computer Science and Mathematics are difficult because it requiries a different method of thinking that is not explicitly developed in children.</li>
+                        <li>By abstractly introducing this process, it allows for connections to personal experiences to be made further strengthening this process.</li>
+                        <li>This model of logical problem solving is then ingrained as a tool for the students to use when navigating through any sort of problem.</li>
+                    </ul>
+                </div>
+                <!---
+                <div class="subheader">Curriculum</div>
+                <div class="text"></div>
+                <div class="subheader">Assessment</div>
+                <div class="text">size test</div>
+                <div class="subheader">Culture</div>
+                <div class="text">size test</div>
+                -->
+                <div class="subheader">Classroom Management</div>
+                <div class="list" id="Mgmt">
+                    <p>As a new teacher, I have been told by many experienced educators that classroom management is a major point of learning. My time as a student teacher was with a class that had an existing teacher who worked for many years to foster a culture within their class and school.</p>
+                    <ul>
+                        <li>Respect and responsibility. I believe every student should learn to have accountability for their actions and education.</li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="section">
+                <a class="heading", id="Skills">Skills</a>
+                <div class="container">
+                    <div class="box">
+                        <div class="subheader">7-12 Certified</div>
+                        <div class="text">
+                            <p>Currently, I am enrolled in Ithaca College's M.A.T. program for Adolesent Education in Mathematics. During this time, I have been student teaching at local middle and high schools. There was also a week-long student teacher experience in NYC to get a glimpse of urban education.</p>
+                            <a href=#Education>Learn More</a>
+                        </div> 
+                    </div>
+                    <div class="box">
+                        <div class="subheader">Computer Science</div>
+                        <div class="text">
+                            <p>Problem solving and collaboration are key skills that are emphasized in the subject of Computer Science. I hold a Bachelors in Computer Science from Cornell University and have taught a condensed course in the summer for Memphis Teacher Academy's STEM Camp.</p>
+                            <a href=#Subjects>Learn More</a>
+                        </div>      
+                    </div>              
+                    <div class="box">
+                        <div class="subheader">Mathematics</div>
+                        <div class="text">
+                            <p>Logical reasoning and understanding grows as mathematical understanding grows. I am currently pursuing a Master's in Mathematics Education and my experience with the program as well as experience student teaching mutiple subjects has armed me with a variety of techniques to foster a positive culture.</p>
+                            <a href=#Subjects>Learn More</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <a class="heading", id ="Classes">Classes</a>
+                <div class="containerclass">
+                    <div class="subheader">Computer Science</div>
+
+                    <figure class="hover-menu">
+                        <img src="https://t3.ftcdn.net/jpg/02/47/04/86/360_F_247048666_9TFA1gCTNQYP6rsAP0JwnZkJn5hiN76M.jpg"/>
+                        <div>
+                            <a href="#">Intro to CS</a>
+                            <a href="#">AP CS A</a>
+                            <a href="#">Project Course</a>
+                        </div>
+                    </figure>
+                    <div class="subheader">Mathematics</div>
+
+                    <figure class="hover-menu">
+                        <img src="https://mtek3d.com/wp-content/uploads/2018/01/image-placeholder-500x500.jpg"/>
+                        <div>
+                            <a href="#">7th Grade</a>
+                            <a href="#">Pre-Calculus</a>
+                            <a href="#">Statistics</a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="section">
+                <a class="heading", id = "Experience">Experience</a>
+                <div class="subheader">
+                    <p>Student Teacher</p>
+                    <div class="text">Lehman Alternative High School</div>
+                    <p>Math 7 and Advanced Math 7</p>
+                    <div class="text"></div>
+                    <p>Math 7 and Advanced Math 7</p>
+
+                </div> 
+            </div>
+            <div class="section">
+                <a class="heading", id="Education">Education</a>
+                <div class="container">
+                    <div class="box">
+                        <div class="subheader">Master of Arts in Teaching</div>
+                        <div class="text">
+                            <p>Adolescent Education (Mathematics)</p>
+                            <p>Ithaca College • Ithaca, NY</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="subheader">Bachelors of Science</div>
+                        <div class="schools" id="schools">
+                            <p>Computer Science. Education minor</p>
+                            <p>Cornell University • Ithaca, NY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="footer">
         <div class="right">(:</div>
     </div>
