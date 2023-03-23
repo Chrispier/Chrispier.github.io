@@ -85,16 +85,17 @@ a{
     font-size: 48px;
     font-weight: 500;
     color: #361d8f; /*8C8A93*/
-    margin-top: 200px;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .contents a, .text a{
-    font-size: 16px;
+    font-size: calc(1.1875rem);
 }
 
 /*each section in the page*/
 .section{
-    margin-top: 50px;
+    margin-top: 64px;
 }
 
 .heading{
@@ -126,7 +127,7 @@ a{
 }
 
 .list{
-    font-size: 14px;
+    font-size: calc(1.1875rem);
     display: flex;
     flex-direction: column;
     list-style:decimal;
@@ -156,10 +157,12 @@ a{
     font-weight: 550;
     padding: 10px;
     margin-top: 15px;
+    font-size: calc(1.1875rem);
 }
 
 .text{
-    font-size: 14px;
+    font-size: calc(1.1875rem);
+    line-height: calc(1em + 0.725rem);
 }
 
 
@@ -267,18 +270,14 @@ a{
 .footer{
     display:flex;
     flex-shrink: none;
-    justify-content: space-between;
+    justify-content: right;
     padding: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
     max-height: 30px;
     background: #D1F0B1;
     /*fix the footer at the bottom*/
     position:fixed;
-    color:#92B4A7;
-
     bottom:0;
-    width:99%;
+    width:100%;
 }
 .right{
     color:#92B4A7;
