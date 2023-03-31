@@ -1,0 +1,9 @@
+++ https://brittanychiang.com/ 02. where ive worked. 
+++ change footer to be side bar info
+++ color block sections
+++ icons and graphics
+++ when windwo small, weird
+
++ prompt to scroll
++ overlap the blocks
++ fade in the sections
