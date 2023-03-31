@@ -10,6 +10,22 @@ function darkMode() {
         }
   }
 
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("logo").style.fontSize = "20px";
+      document.getElementById("logo").textContent = "CSP";
+      document.getElementById("header").style.paddingTop = "16px";
+    } else {
+      document.getElementById("logo").style.fontSize = "36px";
+      document.getElementById("logo").textContent = "Chris S Park";
+      document.getElementById("header").style.paddingTop = "24px";
+    }
+  } 
+
+
+
 //https://github.com/emjose/mousetrail-space
 
 var dots = [],
@@ -42,8 +58,8 @@ for (var i = 0; i < 12; i++) {
 
 function draw() {
 
-  var x = mouse.x+1,
-      y = mouse.y+1;
+  var x = mouse.x-3,
+      y = mouse.y-3;
       
   dots.forEach(function(dot, index, dots) {
     var nextDot = dots[index + 1] || dots[0];

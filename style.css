@@ -1,13 +1,32 @@
+.MouseTrail {
+    position: absolute;
+    height: 7px; width: 7px;
+    border-radius: 4px;
+    pointer-events: none;
+    background: #8C8A93;
+    z-index: 999;
+  }
+html{
+    scrollbar-color: #8C8A93;
+    scrollbar-arrow-color: rgba(245, 245, 220, 0);
+}
+
 body{
     height:100vh;
-    background-color: #ffffff;
+    background-color: #d4d4d4;
     margin:0;
-    font-family: courier;
+    cursor: none;
+    font-family: robotoFont, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 120px;
 }
+
+@font-face {
+    font-family: robotoFont;
+    src: url(../RobotoMono-VariableFont_wght.ttf);
+  }
 
 .header{
     margin:0;
@@ -15,15 +34,16 @@ body{
     justify-content:space-between;
     align-items: baseline;
     padding: 16px;
-    padding-top: 24px;
+    padding-top: 16px;
     color: #8C8A93;
     background-color: #ede9f8;
     /*fix the header at the top*/
     position:fixed;
     top:0;
     /*higher z-index means it shows on top*/
-    z-index: 999;
+    z-index: 998;
     width: 100%;
+    box-shadow: 0px 0px 5px #605e644f;
 }
 
 #navigation{
@@ -37,16 +57,17 @@ body{
 }
 
 .logo{
-    font-size: 36px;
     margin-left: 16px;
     margin-right: 16px;
     color:#81667A;
     font-weight: 500;
+    font-size: 36px;
+    transition: 0.4s;
 }
 
 a{
-    font-size: 18px;
-    font-family:courier;
+    font-size: clamp(12px, 2vw, 18px);
+    font-family:robotoFont, sans-serif;
     color:#8C8A93;
     text-decoration: none;
 }
@@ -55,6 +76,7 @@ a{
 .body{
     display: flex;
     flex-direction: column;
+
     align-items: center;
     color:#728b56;
     /*Center the DIV*/
@@ -67,6 +89,23 @@ a{
 
 }
 
+.name{
+    font-size: var(--fz-xl);
+    color:#726c88;
+}
+
+.namebig{
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: bold;
+    color:#58498b;
+}
+
+.intro{
+    padding-top:7%;
+    min-height: 50vh;
+    line-height: 1.3;
+}
+
 .main{
     display:flex;
     flex-direction:column;
@@ -75,7 +114,7 @@ a{
 }
 
 .bio{
-    font-size: 20px;
+    font-size: var(--fz-xl);
     margin: 0px;
     line-height: 0.2em;
 }
@@ -198,7 +237,7 @@ a{
     max-width: 480px;
     max-height: 290px;
     width: 100%;
-    background: #000;
+    background: #8C8A93;
     text-align: center;
     box-sizing: border-box;
   }
@@ -224,7 +263,7 @@ a{
     width: 120px;
     height: 100%;
     padding: 8px 4px;
-    background: rgb(29, 29, 29);
+    background: rgb(111, 111, 111);
     transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
