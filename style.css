@@ -6,10 +6,6 @@
     background: #8C8A93;
     z-index: 999;
   }
-html{
-    scrollbar-color: #8C8A93;
-    scrollbar-arrow-color: rgba(245, 245, 220, 0);
-}
 
 body{
     height:100vh;
@@ -76,16 +72,12 @@ a{
 .body{
     display: flex;
     flex-direction: column;
-
     align-items: center;
     color:#728b56;
     /*Center the DIV*/
     margin: 0 auto;
     /*This mkaes it so the text doesnt go over the header and footer*/
     padding-top: 120px;
-    padding-bottom: 40px;
-
-
 }
 
 .name{
@@ -113,9 +105,11 @@ a{
 }
 
 .bio{
-    font-size: var(--fz-xl);
+    font-size: clamp(16px, 8vw, 18px);
     margin: 0px;
-    line-height: 0.2em;
+}
+.bio p{
+    margin: 0;
 }
 
 
@@ -138,7 +132,7 @@ a{
 }
 
 .contents a, .text a{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /*each section in the page*/
@@ -149,12 +143,32 @@ a{
     padding-right: 20%;
 }
 
-
 .heading.unblocked{
     font-size: 30px;
     color: #58498b;
     font-weight: 500;
+}
 
+.subheader{
+    color: #726c88;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.section.block{
+    background-color: #58498b !important;
+    color:white !important;
+}
+
+.heading.blocked{
+    font-size: 30px;
+    color: #dcd2ff;
+    font-weight: 500;
+}
+
+.subheader.blocked{
+    color:#92B4A7;
 }
 
 .container{
@@ -163,21 +177,6 @@ a{
     column-gap: 20px;
     justify-content: center;
     margin: 50px;
-}
-
-div.section.block{
-    background-color: #58498b !important;
-    color:white !important;
-
-}
-
-.heading.blocked{
-    font-size: 30px;
-    color: #dcd2ff;
-    font-weight: 500;
-}
-.subheader.blocked{
-    color:#92B4A7;
 }
 
 .container2{
@@ -189,9 +188,8 @@ div.section.block{
     padding-left: 15%;
 }
 
-
 .list{
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     list-style:decimal;
@@ -213,17 +211,10 @@ div.section.block{
 
 .list li{
     padding-bottom: 10px;
-
-}
-
-.subheader{
-    color: #726c88;
-    font-weight: 600;
-    padding-top: 15px;
 }
 
 .text{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -332,15 +323,10 @@ div.section.block{
     display:flex;
     flex-shrink: none;
     justify-content: space-between;
-    padding: 50px;
-    padding-left: 24px;
-    padding-right: 24px;
     max-height: 70px;
     background: #D1F0B1;
-    /*fix the footer at the bottom*/
-    
     color:#92B4A7;
-    width:99%;
+    width: 100%;
 }
 .right{
     color:#92B4A7;
