@@ -6,3 +6,39 @@
 + fade in the sections
 
 Teaching Philosophy:
+"self-reflective statement of your beliefs about teaching and learning"
+- values/beliefs/aspirations as a teacher
+    resource: My role as a teacher in the room is to be a resource. I have the responsibility to teach these students in an effective manner.
+    guidance: I recognize that I am an adult in the room that students may look up to. There is a lot of pressure on
+    classroom culture (expand):
+        A positive learning environment is such an impactful variable for student achievement. Fostering one that promotes discussion and flexibility 
+    everyone can learn high school math:
+        Everyone has the capability high school math in the given time (except extreme cases). As a result, everyone should be given the chance and effort to succeed.
+- goals for students
+    connections/awareness: Students should be able to take this knowledge and then make connections beyond the unit (and even content matter). They shuold be aware of the connections and their level of understanding.
+    self-sufficiency: Students should be able to advocate for themselves and foster their own understanding. An emphasis on good study practices as well as asking for help will be placed in all classes.
+        reflective learners: They can self-reflect on their own work.
+        advocate for themselves and reach out for help
+    logical thinking: This is important for STEM (especially CS). Identifying and weighing variables is a good skill.
+- teaching methods
+    exploration (personal experience): Tying in work to student personal experience and the other way around allows for deeper understanding.
+    explanation: Providing formal explanations and reasoning for abstract concepts can only benefit the students.
+    practice: Practice is how I personally find myself learning math concepts, and when I poll students, it is how they best learn. I will still poll to see what is best, but practice is important in my class.
+    foundational knowledge: Math and CS build upon itself so much. A strong foundation is needed before moving on to the next topic.
+- interactions with students
+    respect: There needs to be a mutual respect that first begins with me respecting them. 
+        have them understand I have their best interest at heart
+    understanding:
+        them, their work, personal experiences
+    work together (challenge problems): working together along with the students helps build a positive classroom environment.
+- assessment
+    preparation, they should know what is important: They should have a higher level of understanding and awareness about the unit.
+    self-assessment: Students should be able to assess their own understanding and their needs.
+    deep understanding: critical thinking will be tied with the subject matter to solve complex problems that combine concepts.
+    differentiation (in expression): There is a balance in allowing students to express their understanding in different ways and getting comfortable in the methods they have trouble in.
+- professional growth
+    philosophy (differentation) what research am I looking at? Tie in inquiry project research
+    feedback: Student, peer, and mentor feedback on lessons. 
+    content matter is changing (honing my own skills): Personal math research and computer science projects.
+    NCTM
+
