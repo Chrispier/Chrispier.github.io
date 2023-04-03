@@ -177,6 +177,11 @@ a{
     flex-shrink: none;
 }
 
+.description{
+    visibility: hidden;
+    height:0;
+}
+
 .list #Focus{
     padding-right: 300px;
 }
@@ -216,6 +221,20 @@ a{
 .info{
     max-width: 500px;
     margin:16px;
+}
+
+/*arrows*/
+button.details{
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: #58498b;
+    padding: 5px 10px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 
@@ -310,7 +329,36 @@ a{
     margin:0;
 }
 
-button{
+.email{
+    display:flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 14px;
+}
+.information{
+    position:fixed;
+    bottom: 10vh;
+    right: 10vw;
+    font-size: 14px;
+    color: #728b56
+}
+.information:hover{
+    transition: 0.4s;
+    bottom: 11vh;
+    color: #add382;
+}
+.vl{
+    border-left: 2px solid #728b56;
+    justify-content: center;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    right: 10.5vw;
+    height: 6vh;
+}
+
+button.dark{
     border:none;
     padding: none;
     color: #8C8A93;

@@ -84,3 +84,23 @@ function animate() {
 }
 
 animate();
+
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("myBtn");
+var name;
+function readMore(name) {
+  var text = document.getElementById("description"+name);
+  var butt = document.getElementById(name);
+  if (butt.innerHTML === "Show Details") {
+    butt.innerHTML = "Hide Details";
+    text.style.visibility="visible";
+    text.style.color="#bae28d"
+    text.style.marginBottom = "6px";
+    text.style.height="auto";
+  } else {
+    butt.innerHTML = "Show Details";
+    text.style.visibility="hidden";
+    text.style.marginBottom = "0px";
+    text.style.height="0";
+  }
+}

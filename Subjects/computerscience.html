@@ -19,7 +19,7 @@
             <li><a href="../programmer.html">Programmer</a></li>
             <li><a href="../photographer.html">Photographer</a></li>
             <li><a href="../more.html">More</a></li>
-            <li><button onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div>
+            <li><button class = "dark" onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div>
                 </button></li>
         </ul>
     <!-- TODO: make a light/dark mode button and a contact me -->
@@ -47,12 +47,15 @@
                 <div class="subheader blocked">Course Outline</div>
                 <div class="list" id="Outline">
                     <ul>
-                        <li>Unit 1: Variables and Data</li>
-                            <p>Storing values is fundamental to programming. By using variables, values can be saved and modified to be referred by different people and programs. Naming guidelines and understanding limitations of each data type allows for efficient programming. In this unit, students will be introduced to pseudocode with the use of simple operations and variables.</p>
+                        <li id="intro7">Unit 1: Variables and Data</li>
+                            <div class="description" id="descriptionintro1">Storing values is fundamental to programming. By using variables, values can be saved and modified to be referred by different people and programs. Naming guidelines and understanding limitations of each data type allows for efficient programming. In this unit, students will be introduced to pseudocode with the use of simple operations and variables.</div>
+                            <button class="details" onclick="readMore('intro1')"id="intro1">Show Details &#8681;</button>
                         <li>Unit 2: Algorithmic Solutions</li>
-                            <p>All solutions are not equal, and finding the best solution is what makes a developer stand out. Procedural programming is a basic way of apporaching problems as they are solved step-by-step in order. Although it may not be the most efficient, it does begin developing a problem solving mindset that breaks down a complex scenario into step-sized components.</p>
+                            <div class="description" id="descriptionintro2">All solutions are not equal, and finding the best solution is what makes a developer stand out. Procedural programming is a basic way of apporaching problems as they are solved step-by-step in order. Although it may not be the most efficient, it does begin developing a problem solving mindset that breaks down a complex scenario into step-sized components.</div>
+                            <button class="details" onclick="readMore('intro2')"id="intro2">Show Details</button>
                         <li>Unit 3: Functions</li>
-                            <p></p>
+                            <div class="description" id="descriptionintro3">Programs repeat a lot of key processes thousands of times. Instead of writing out thousands of instructions, we can create</div>
+                            <button class="details" onclick="readMore('intro3')"id="intro3">Show Details</button>
                         <li>Unit 4: Strings</li>
                         <li>Unit 5: Conditionals</li>
                         <li>Unit 6: Iterations</li>
@@ -135,6 +138,10 @@
         </div>
     <div class="footer">
         <div class="right">(:</div>
+    </div>
+    <div class="email">
+        <a href="mailto:chrsc.park@gmail.com" class="information">chsc.park@gmail.com</a>
+        <div class="vl"></div>
     </div>
 </body>
 </html>
