@@ -168,7 +168,22 @@ a{
 }
 
 .subheader.blocked{
-    color:#92B4A7;
+    color:#c1cefe;
+}
+
+strong{
+    color: #b49cc2;
+}
+
+ul{
+    list-style: none !important;
+}
+.list ul li::before{
+    content: "•";
+    display: inline-block; width: 1em;
+    list-style: none;
+    margin-left: -1em;
+    color:#a29abe;
 }
 
 .container{
@@ -193,11 +208,8 @@ a{
     display: flex;
     flex-direction: column;
     list-style:decimal;
-    margin: 0;
-    padding: 0;
     max-width: 80%;
     gap: 16px;
-    padding-right: 300px;
     flex-shrink: none;
 }
 
@@ -205,8 +217,8 @@ a{
     padding-right: 300px;
 }
 
-.list #Mgmt{
-    padding-left: 300px;
+.list #Values{
+    margin-left: 20vw;
 }
 
 .list li{
