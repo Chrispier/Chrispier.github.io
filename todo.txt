@@ -1,5 +1,6 @@
 +++ math and cs lessons
-
+++ tooltips for units
+    :checked and :hover
 ++ icons and graphics
 
 + prompt to scroll
