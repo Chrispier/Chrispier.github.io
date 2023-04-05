@@ -10,9 +10,9 @@
         <script defer src="../script.js"></script>
     </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
     <!-- header with tabs and features -->
-    <a href=".../Chrispier.github.io/index.html"><div class="logo">Chris S Park</div></a>
+    <a href=".../Chrispier.github.io/index.html"><div class="logo" id="logo">Chris S Park</div></a>
         <!-- Goes back to the home page -->
         <ul id="navigation">
             <li><a href="../educator.html">Educator</a></li>
@@ -33,17 +33,63 @@
             </div>
             <div class="index">
                 <div class="title">Computer Science</div>
-                <div class="contents"><a name ="pointer1" href="#pointer1">Intro to Computer Science</a> • <a href=#pointer2>AP Computer Science A</a> • <a href=#pointer3>Project Course</a> • <a href=#pointer4>What's Next</a></div>
+                <div class="contents"><a name ="pointer1" href="#pointer1">Intro to Computer Science</a> • <a href=#pointer2>AP Computer Science A</a> • <a href=#pointer3>Project Course</a></div>
+            </div>
+            <div class="index block">
+                <div class="text">
+                    Computer science is a booming industry over the past decades and it continues to grow in importance and relevance in this Information Age. 
+                    One of the growing pains I have seen as a newcomer to this industry is hastily put together foundation to build up the youth for this field.
+                    My high school courses as well as the courses at schools I student taught at all had mediocre computer science departments where the teacher was often forced into that role.
+                    Quality teaching is fundamental to the development of the next generation, and I hope to be part of your joint effort to make sure this subject continues to flourish.
+                </div>
+                <p></p>
+                <div class="text">
+                    <strong>Programming is difficult.</strong> Let me revise that. Programming well is difficult, while programming in general is quite simple. 
+                    There are two main hurdles I have seen all computer science students face. The first is learning <strong>how to break down the problem into logical steps.</strong>
+                    Thinking in logical steps that break down a problem into inputs and outputs is a process that is foreign to many. Similar to how people say they do not have a brain for math, this is the same type of hurdle.
+                    We have to build up and practice looking at problems from a different viewpoint to solve these problems.
+                    Once this is built up, programming is deeply intuitive and becomes a natural process in how we observe the natural world. 
+                    Passing this hurdle is what makes a programmer who can solve problems and write code for a job. 
+                    Programming well is the next hurdle where we learn <strong>how to optimize problems</strong> in an unconventional way to get the best solution. 
+                    We have to dive deeper and deeper to find more elegant solutions and discover how vast this field truly is. 
+                    I hope to guide students to find joy in discovery that fuels them to continue beyond my guidance. This drive to be better is what makes a good programmer.
+                </div>
+                <div class="subheader">Materials</div>
+                <div class="text"><i>There are a lot of potentional resources I would like to use in my class. Here are some that I am comfortable introducing to a class.</i></div>
+              
+                    <ul>
+                        <li><a href="https://jupyter.org/">Jupyter Notebook</a>
+                             for beginner programming assignments that require more structure and smaller portions of code.</li>
+                        <li><a href="https://processing.org/">Processing</a> or <a href="https://p5js.org/">p5.js</a>
+                             for graphical based projects tailored for introductory courses.</li>
+                        <li><a href="https://code.visualstudio.com/">Visual Studo Code</a>
+                             is my IDE of choice which can run nearly any language and is the standard for higher education and industry.</li>
+                        <li><a href="https://github.com/">Github</a>
+                             is a free cloud-based respository that allows for easy collaboration and submission of programming projects.</li>
+                    </ul>
+                <div class="text"><i>I develop my own teaching materials to ensure there is a consistant flow throughout the entire semester and the materials suit the current needs of the students. These are informed by my experience in my undergraduate studies, experience in the classroom, textbooks, and current industry advancements.</i></div>
+                <div class="list">
+                    <ul>
+                        <li>Slide show presentations</li>
+                        <li>Published class notes for students to access</li>
+                    </ul>
+                </div>
+                <div class="subheader">Personal Style</div>
+                <div class="text"><i>To me, understanding is essential. Computer science is a directly applicable field of study, so I like to focus my efforts on self-sufficiency. Through a balance of cohesive lectures that introduce the new concept and practice with its application, students mimic how to gather resources and advocate for their own education.</i></div>
+                <p></p>
+                <div class="text"><i>During lectures, I engage studetnts with open ended questions that provoke discussion abnd prior knowledge. These are often made from what I observed that they found to be difficult. They are also made to mimic how they should grow and what they should ask themselves to make sure they have a full grasp of the concepts.</i></div>
+                <p></p>
+                <div class="text"><i>I see education as a place where I join the students in exploration of the subject to show that I am on their side and a resource they should use to grow.</i></div>
             </div>
             <div class="section block">
                 <a class="jumper" id="pointer1"></a>
 
                 <a class="heading blocked", id="">Intro to Computer Science</a>
                 <div class="subheader blocked">Objective</div>
-                <div class="list" id="Focus">
-                    <p>As an introductory course to the world of computer science, this course places an emphasis on developing a problem solving mindset within students.</p>
-                </div>
-                <div class="subheader blocked">Course Outline</div>
+                
+                <div class="text"><p>As an introductory course to the world of computer science, this course places an emphasis on developing a problem solving mindset within students.</p></div><p><i>This course will most likely be taught using Python and Jupyter Notebook.</i></p>
+                
+                <div class="subheader blocked">Course Outline <div class="tinytext">(hover over the units)</div></div>
                 <div class="list" id="Outline">
                     <ul>
                         <li><div class="tooltip blocked">Unit 1: Variables and Data
@@ -54,6 +100,31 @@
                             <span class="tooltiptext">
                                 All solutions are not equal, and finding the best solution is what makes a developer stand out. Procedural programming is a basic way of apporaching problems as they are solved step-by-step in order. Although it may not be the most efficient, it does begin developing a problem solving mindset that breaks down a complex scenario into step-sized components. </span>                            </span>
                         </div></li>
+                        <li><div class="tooltip blocked">Unit 3: Functions
+                            <span class="tooltiptext">
+                                Programming often involves a repetition of small tasks. For example, adding two values takes a lot of work on the computer's end, but we can simply use the addition symbol to tell the computer what to do. This unit dives into learning how to make instruction sets that can be generalized to solve a common problem. It expands the problem solving mindset to include thinking for other scenarios.
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip blocked">Unit 4: Strings
+                            <span class="tooltiptext">
+                                Strings are what programmers call a sequence of characters. It is an unusual data type with how it is stored and how it can be used. In the beginning context, it is a familiar format that allows students to understand objects and the personal functions that an object can have. Projects will be centered around manipulating different strings and prepare students for the concept of arrays.
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip blocked">Unit 5: Conditionals
+                            <span class="tooltiptext">
+                                Not all inputs are the same. Conditional statements allow us to now create a branching flow-chart to solve a problem. Variables of the problem are determined and comparisons are made to create a solution to a problem that produces the correct outputs. This is the last step that is fully procedural programming for the students. 
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip blocked">Unit 6: Iterations
+                            <span class="tooltiptext">
+                                To optimize a program and to allow it to go beyond human capabilities, there is the tool of iterations. Snippets of code are repeated over an over to manipulate data thousands of times to return a desired result. Problems can not be solved one step at a time now, but the problem has to be generalized to allow a pattern to be seen. 
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip blocked">Unit 7: Arrays
+                            <span class="tooltiptext">
+                                This final unit serves as an introduction to the wide array of data types that are used in higher levels of programming. Arrays are a collection of a singular data type which allows for larger programs. Projects can now include large amounts of data and the need for efficient programming can now be felt by the programmers.
+                            </span>
+                        </div> </li>
                         <!--
                         <li id="intro7">Unit 1: Variables and Data</li>
                             <div class="description" id="descriptionintro1">
@@ -73,41 +144,96 @@
                         -->
                     </ul>
                 </div>
+                <!--
                 <div class="subheader blocked">Projects</div>
                 <div class="text">size test</div>
+                -->
                 <div class="subheader blocked">Sample Lesson</div>
                 <iframe src="Procedural Programming Lesson.pdf" width="100%" height="800px"></iframe> 
                 <div class="text"></div>
+
+
 
             </div>
             <div class="section" name ="pointer2" >
                 <a class="jumper" id="pointer2"></a>
                 <a class="heading" id="">AP Computer Science A</a>
                 <div class="subheader">Objective</div>
-                <div class="list" id="Focus">
-                    <p>As an introductory course to the world of computer science, this course places an emphasis on developing a problem solving mindset within students.</p>
+                <div class="text">
+                    <p>This course is an object-oriented approach to programming going at a faster pace than the introductory course. Students will be expected to have prior experience to programming.</p>
+                    <p><i>This course will be taught using Java and VS Code.</i></p>
                 </div>
                 <div class="subheader">Course Outline</div>
                 <div class="list" id="Outline">
                     <ul>
-                        <li><div class="tooltip">Unit 1: Variables and Data
-                            <span class="tooltiptext">information</span>
-                        </div></li>
-                        
-                        <li>Unit 2: Algorithmic Solutions</li>
-                        <li>Unit 3: Functions</li>
-                        <li>Unit 4: Strings</li>
-                        <li>Unit 5: Conditionals</li>
-                        <li>Unit 6: Iterations</li>
-                        <li>Unit 7: Arrays</li>
+                        <li><div class="tooltip">Unit 1: Introduction to Java
+                            <span class="tooltiptext">
+
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 2: Object-Oriented Programming
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 3: Conditional Review and Libraries
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 4: Testing
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 5: Iteration
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 6: Classes
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 7: Arrays
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 8: ArrayList
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 9: 2D Arrays
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 10: Inheritance
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 11: Recursion
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
                     </ul>
                 </div>
+                <!--
                 <div class="subheader">Projects</div>
                 <div class="text">size test</div>
                 <div class="subheader">Sample Lesson</div>
                 <iframe src="" width="100%" height="800px"></iframe> 
                 <div class="text"></div>
+                -->
             </div>
+
+
+
             <div class="section block">
                 <a class="jumper" id="pointer3"></a>
                 <a class="heading blocked", id ="">Project Course</a>
@@ -118,37 +244,41 @@
                 <div class="subheader blocked">Course Outline</div>
                 <div class="list" id="Outline">
                     <ul>
-                        <li>Unit 1: Variables and Data</li>
-                        <p></p>
-                        <li>Unit 2: Algorithmic Solutions</li>
-                        <li>Unit 3: Functions</li>
-                        <li>Unit 4: Strings</li>
-                        <li>Unit 5: Conditionals</li>
-                        <li>Unit 6: Iterations</li>
-                        <li>Unit 7: Arrays</li>
+                        <li><div class="tooltip">Unit 1: Fields of Computer Science
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 2: Developing a Project
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 3: Collaboration
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 4: Research
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
+                        <li><div class="tooltip">Unit 5: Presentation
+                            <span class="tooltiptext">
+                                
+                            </span>
+                        </div> </li>
                     </ul>
                 </div>
+                <!--
                 <div class="subheader blocked">Projects</div>
                 <div class="text">size test</div>
                 <div class="subheader blocked">Sample Lesson</div>
                 <div class="text">size test</div>
+                -->
             </div>
-            <div class="section">
-                <a class="jumper" id="pointer4"></a>
-                <a class="heading", id = "">What's Next</a>
-                <div class="subheader">Lehman Alternative High School</div>
-                <div class="text">Student Teacher</div>
-                <div class="text">Pre-Calculus, Computer Science, Statistics, Geometry</div>
-                <div class="subheader">Lansing Middle School</div>
-                <div class="text">Student Teacher</div>
-                <div class="text">Math 7, Advanced Math 7</div>
-                <div class="subheader">Marjorie Lee Browne STEM Discovery Camp</div>
-                <div class="text">Marjorie Lee Browne STEM Education Fellow</div>
-                <div class="text">Computer Science Teacher</div>   
-                <div class="subheader">Open Doors English</div>
-                <div class="text">Student Assistant</div>
-                <div class="text">Adult English Language Learners</div>   
-            </div>
+           
         </div>
     <div class="footer">
         <div class="right">This site has been coded by Chris Park and published with GitHub Pages.</div>

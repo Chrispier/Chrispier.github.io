@@ -69,17 +69,22 @@ a{
 }
 
 .index{
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 20vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
+
+.index.block{
+    background-color: #ffffff;
+}
+
 
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:#728b56;
+    color:#42364e;
     /*Center the DIV*/
     margin: 0 auto;
     /*This mkaes it so the text doesnt go over the header and footer*/
@@ -197,6 +202,7 @@ a{
 
 .text{
     font-size: 16px;
+    line-height: 1.5;
 }
 
 /*Tooltips*/
@@ -208,7 +214,7 @@ a{
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width:auto;
+    width: 50vw;
     background-color: #58498b;
     color: #fff;
     text-align: center;

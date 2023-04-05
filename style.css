@@ -278,6 +278,7 @@ ul{
     position: relative;
     max-width: 105%;
     object-position: center;
+    justify-content: center;
     right: 0;
     opacity: 1;
     transition: 0.3s ease-in-out;
