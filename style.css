@@ -332,19 +332,50 @@ ul{
 
 
 
-.footer{
+  .footer{
     display:flex;
     flex-shrink: none;
-    justify-content: space-between;
-    max-height: 70px;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
     background: #D1F0B1;
     color:#92B4A7;
     width: 100%;
+    margin-bottom: 0;
 }
 .right{
-    color:#92B4A7;
-    font-size: 12px;
+    color:#5b7269;
+    font-size: 14px;
     margin:0;
+}
+
+.email{
+    display:flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 14px;
+}
+.information{
+    position:fixed;
+    bottom: 10vh;
+    right: 10vw;
+    font-size: 14px;
+    color: #728b56
+}
+.information:hover{
+    transition: 0.4s;
+    bottom: 11vh;
+    color: #add382;
+}
+.vl{
+    border-left: 2px solid #728b56;
+    justify-content: center;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    right: 10.5vw;
+    height: 6vh;
 }
 
 button{
