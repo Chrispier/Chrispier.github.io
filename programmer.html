@@ -3,20 +3,30 @@
     <head> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="iwdth=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chris Park</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <script defer src="script.js"></script>
     </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
     <!-- header with tabs and features -->
-    <a href="../Chrispier.github.io/index.html"><div class="logo">Chris S Park</div></a>
+    <a href="./educator.html"><div class="logo" id="logo">Chris S Park</div></a>
         <!-- Goes back to the home page -->
-        <ul>
-            <li><a href="./educator.html">Educator</a></li>
-            <li><a href="./programmer.html">Programmer</a></li>
-            <li><a href="./more.html">More</a></li>
+        <ul id="navigation">
+            <li><div class="dropdown">
+                <button class="dropbtn"><a href="./educator.html">Educator</a></button>
+                <div class="dropdown-content">
+                  <a href="/Subjects/computerscience.html">Computer Science</a>
+                  <a href="/Subjects/mathematics.html">Mathematics</a>
+                </div>
+              </div></li>
+            <li><button class="dropbtn"><a href="./programmer.html">Programmer</a></button></li>
+            <li><button class="dropbtn"><a href="./more.html">More</a></button></li>
+            <li><button class = "dark" onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div></button></li>
         </ul>
+        
     <!-- TODO: make a light/dark mode button and a contact me -->
     </div>
 
@@ -24,11 +34,39 @@
         <div class="sidebar">
 
         </div>
-        <div class="info">Hello, I am a programmer. Welcome to my website.</div>
-        <div class="info">I still have much to work on before I get to this webpage. Feel free to take a look at my github repos while I build this page.</div>
-    </div>
-    <div class="footer">
-        <div class="right">(:</div>
-    </div>
+        <div class="main">
+            <div class="intro">
+                <div class="name">Hello, my name is</div>
+                <div class="namebig">Chris S Park.</div>
+                <div class="bio">
+                    <p>Here are some projects I have worked on.</p>
+                </div>
+            </div>
+            <div class="index block">
+                <div class="title">Projects</div>
+                <div class="contents"><a href="">Desktop Buddy</a> • <a href="">Tetris</a> </div>
+            </div>
+            <div class="section block">
+                <a class="heading blocked", id="Philosophy">Desktop Buddy</a>
+                <div class="subheader blocked">_Focus</div>
+                <div class="list" id="Focus">
+                    <p><i>Goals set forth within every classroom aimed to improve student understanding and general ability as a student.</i></p>
+                    <ul>
+                        <li><strong>Awareness</strong> of the curriculum and self-understanding related to the subject matter. Making outside connections to and with the curriculum. Students are the audience of each lesson, so they should be notified of all relevant expectations and information about the class to help them fully understand the subject and my approach.</li>
+                        <li><strong>Self-Sufficiency</strong> which includes a student's ability to study and expand on the material as well as being able to self-advocate to seek help and promote their ideas.</li>
+                        <li><strong>Logical Thinking</strong> to process through a problem by identifying the key variables and determinining your best choice. Any problem can be navigted through and their decision can be justified.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="right">This site has been coded by Chris Park and published with GitHub Pages.</div>
+        </div>
+        <div class="email">
+            <a href="mailto:chrsc.park@gmail.com" class="information">chsc.park@gmail.com</a>
+            <div class="vl"></div>
+        </div>
 </body>
 </html>

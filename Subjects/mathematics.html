@@ -15,11 +15,16 @@
     <a href=".../Chrispier.github.io/educator.html"><div class="logo" id="logo">Chris S Park</div></a>
         <!-- Goes back to the home page -->
         <ul id="navigation">
-            <li><a href="../educator.html">Educator</a></li>
-            <li><a href="../programmer.html">Programmer</a></li>
-            <li><a href="../more.html">More</a></li>
-            <li><button class = "dark" onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div>
-                </button></li>
+            <li><div class="dropdown">
+                <button class="dropbtn"><a href="../educator.html">Educator</a></button>
+                <div class="dropdown-content">
+                  <a href="/Subjects/computerscience.html">Computer Science</a>
+                  <a href="/Subjects/mathematics.html">Mathematics</a>
+                </div>
+              </div></li>
+            <li><button class="dropbtn"><a href="../programmer.html">Programmer</a></button></li>
+            <li><button class="dropbtn"><a href="../more.html">More</a></button></li>
+            <li><button class = "dark" onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div></button></li>
         </ul>
     <!-- TODO: make a light/dark mode button and a contact me -->
     </div>
