@@ -3,20 +3,23 @@
     <head> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="iwdth=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chris Park</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <script defer src="script.js"></script>
     </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
     <!-- header with tabs and features -->
-    <a href="../Chrispier.github.io/index.html"><div class="logo">Chris S Park</div></a>
+    <a href="./educator.html"><div class="logo" id="logo">Chris S Park</div></a>
         <!-- Goes back to the home page -->
-        <ul>
+        <ul id="navigation">
             <li><a href="./educator.html">Educator</a></li>
             <li><a href="./programmer.html">Programmer</a></li>
             <li><a href="./more.html">More</a></li>
+            <li><button onclick ="darkMode()"><div id="theme-btn", class="far fa-moon"></div>
+                </button></li>
         </ul>
     <!-- TODO: make a light/dark mode button and a contact me -->
     </div>
@@ -25,10 +28,187 @@
         <div class="sidebar">
 
         </div>
-        <div class="info">Hello, I am Chris S Park. Welcome to my website.</div>
-    </div>
-    <div class="footer">
-        <div class="right">(:</div>
-    </div>
+        <div class="main">
+            <div class="intro">
+                <div class="name">Hello, my name is</div>
+                <div class="namebig">Chris S Park.</div>
+                <div class="bio">
+                    <p>I am a computer science and mathematics teacher.</p>
+                    <p>Here is my teaching portfolio.</p>
+                    <p> - </p>
+                    <p>For the demo lesson, here is the <a href="../Bubble.java">project code</a> and <a href="Sorting Algorithms Using BubbleSort.pdf">slides.</a></p>
+                </div>
+            </div>
+            <div class="index block">
+                <div class="title">Portfolio</div>
+                <div class="contents"><a href=#Philosophy>Philosophy</a> • <a href=#Skills>Skills</a> • <a href=#Subjects>Subjects</a> • <a href=#Experience>Experience</a> • <a href=#Education>Education</a> • <a href="../ResumeParkChris.pdf">Resumé</a> • <a href="../BubbleComplete.java">Bubble Sort Complete</a></div>
+            </div>
+            <div class="section block">
+                <a class="heading blocked", id="Philosophy">Philosophy</a>
+                <div class="subheader blocked">_Focus</div>
+                <div class="list" id="Focus">
+                    <p><i>Goals set forth within every classroom aimed to improve student understanding and general ability as a student.</i></p>
+                    <ul>
+                        <li><strong>Awareness</strong> of the curriculum and self-understanding related to the subject matter. Making outside connections to and with the curriculum. Students are the audience of each lesson, so they should be notified of all relevant expectations and information about the class to help them fully understand the subject and my approach.</li>
+                        <li><strong>Self-Sufficiency</strong> which includes a student's ability to study and expand on the material as well as being able to self-advocate to seek help and promote their ideas.</li>
+                        <li><strong>Logical Thinking</strong> to process through a problem by identifying the key variables and determinining your best choice. Any problem can be navigted through and their decision can be justified.</li>
+                    </ul>
+                </div>
+                <div class="subheader blocked">_Values</div>
+                <div class="list" id="Values">
+                    <p><i>As an educator, what beliefs do I have and how do I make efforts towards effectively acting upon these beleifs?</i></p>
+                    <ul>
+                        <li><strong>Acting as a Resource</strong> to provide the students with an education that best fits where they are at. It is my responsibility to aid all levels of students and provide the materials needed to digest the content knowledge.</li>
+                        <li><strong>Guidance</strong> provided as I have to acknowledge the influence I will have on some students. Beyond being a teacher, I am a person who they look up to, so I should act appropriately to best guide them.</li>
+                        <li><strong>Everyone can Learn High School Math</strong> given adequate resources. As a result, effort should be put in for every student to assist them and not give up on them.</li>
+                        <li><strong>Love for the Subject</strong> is visibly portrayed in my understanding and continued study of both subject matters. There is a beauty in solving problems and learning about concepts that allow one to model life. There is so much to be discovered in math and so much to create with computer science.</li>
+                    </ul>
+                </div>
+                <div class="subheader blocked">_Methods</div>
+                <div class="list" id="Methods">
+                    <p><i>Within instruction, I include a lot of different expressions of the material to provide differentiation in how students understand the material with the goal of the students going beyond and making strong connections.</i></p>
+                    <ul>
+                        <li><strong>Exploration</strong> by using personal experiences allows scaffolding with a sound foundation or support. Concepts can be introduced with a personal experience that relates to students or build up to a connection. These connections deepen student understanding and build up flexibility in their application of the knowledge</li>
+                        <li><strong>Explanation</strong> of the deeper reasoning is one way of acknowledging the students as mathematicians and programmers. Since these subjects are structured to build upon prior knowledge, fully understanding where these concepts derive from builds connections within the content.</li>
+                        <li><strong>Practice</strong> is how I found myself learning content. Knowing the concepts is one part and being able to decipher problems into smaller steps and apply the knowledge to solve each step is the other.</li>
+                        <li><strong>Individual Support</strong> through office hours and building a culture that promotes asking for assistance. It is inevitable that students will need additional support and I want to cultivate a culture that normalizes seeking support by providing an open door to students who desire assistance. I make sure to take the time to aid students in understanding and answering every question they may have.</li>
+                    </ul>
+                </div>
+                <div class="subheader blocked">_Student Interactions</div>
+                <div class="list" id="Student">
+                    <p><i>Interacting with students goes beyond lecturing like a video presentation. There is a lot that can be done to build up a more positive environment.</i></p>
+                    <ul>
+                        <li><strong>Respect</strong> is the foremost term when I consider my approach towards students. Mutual respect begins when I first repsect my students's voices, opinions, ability, and effort. I hope to have them respect me enough to understand that I have their best interests at heart.</li>
+                        <li><strong>Understanding</strong> their work, personal experiences, and them as individuals is a way to outwardly express this respect. By understanding their work and their mistakes, their thought process is validated and .</li>
+                        <li><strong>Collaboration</strong> with the students as we work together to discover concepts and solve challenge problems. Working with the students in a way where I am not simply the one who writes the problems on the board, but also the one who is working alongside them aims to build up a more positive classroom environment.</li>
+                    </ul>
+                </div>
+                <div class="subheader blocked">_Assessment</div>
+                <div class="list" id="Assess">
+                    <p><i>Various assessment methods will be applied to test deeper understanding of the material and strengthen student learning. Specifics in format are detailed in specific content areas.</i></p>
+                    <ul>
+                        <li><strong>Preparation</strong>
+                             is key in having students understand what is expected and what is important for the assessments. This showcases a higher level of awareness about the unit and class.</li>
+                        <li><strong>Self-Assessment</strong>
+                             will be encouraged and built so that studens will be able to assess their own understanding to guide their studying and practice. </li>
+                        <li><strong>Deep Understanding</strong>
+                             goes in hand with preparation and awareness as the assessment questions will often include problems that require connections to decipher the steps needed to solve the question.</li>
+                        <li><strong>Differentiation</strong>
+                             in expression is a way to have students showcase their knowlege in the way that best suits them. A balance will be met in allowing different expression as well as growing in all types of expression and growing comfortable in adjusting personal preferences.</li>
+                    </ul>
+                </div>
+                <div class="subheader blocked">_Professional Growth</div>
+                <div class="list" id="Growth">
+                    <p><i>As I promote lifelong learning within my students, it is important that I personally grow and show the value that I find in it to aid me as a person and educator.</i></p>
+                    <ul>
+                        <li><strong>Psychology and Pedagogy</strong>
+                             are fields that continue to have newly published research that shapes my teaching philosophy. Currently, I am looking at Dweck's concept of productive struggle and Csíkszentmihályi's flow.</li>
+                        <li><strong>Feedback</strong>
+                             provides another set of eyes to analyze the lesson and provide information. Students are given surveys and listened to, peers are invited and discussed with, and my mentors have been so helpful in guiding me to where I am at today.</li>
+                        <li><strong>Content Matter</strong>
+                             in the field of Computer Science is growing at a rapid pace in both depth and breadth. To act as an effective resource for the students, I continue to work on projects to hone my abilities and explore what is being discovered in this present age.</li>
+                        <li><strong>Professional Organizations</strong>
+                             like NCTM provide me with access to resources that relate to all the above mentioned. Staying connected to other educators and discussing our different perspectives provides a lot of growth. I hope to join a community that fosters one inside its walls.
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="section">
+                <a class="heading unblocked", id="Skills">Skills</a>
+                <div class="container">
+                    <div class="box">
+                        <div class="subheader">_7-12 Certified</div>
+                        <div class="text">
+                            <p>Currently, I am enrolled in Ithaca College's M.A.T. program for Adolesent Education in Mathematics. During this time, I have been student teaching at local middle and high schools. There was also a week-long student teacher experience in NYC to get a glimpse of urban education.</p>
+                            <a href=#Education>Learn More</a>
+                        </div> 
+                    </div>
+                    <div class="box">
+                        <div class="subheader">_Computer Science</div>
+                        <div class="text">
+                            <p>Problem solving and collaboration are key skills that are emphasized in the subject of Computer Science. I hold a Bachelors in Computer Science from Cornell University and have taught a condensed course in the summer for Memphis Teacher Academy's STEM Camp.</p>
+                            <a href=#Subjects>Learn More</a>
+                        </div>      
+                    </div>              
+                    <div class="box">
+                        <div class="subheader">_Mathematics</div>
+                        <div class="text">
+                            <p>Logical reasoning and understanding grows as mathematical understanding grows. I am currently pursuing a Master's in Mathematics Education and my experience with the program as well as experience student teaching mutiple subjects has armed me with a variety of techniques to foster a positive culture.</p>
+                            <a href=#Subjects>Learn More</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="section block">
+                <a class="heading blocked", id ="Subjects">Subjects</a>
+                <div class="containerclass">
+                    <div class="subheader blocked"><a href="./Subjects/computerscience.html">_Computer Science</a></div>
+
+                    <figure class="hover-menu">
+                        <img src="./csstockphoto.png"/>
+                        <div>
+                            <a href="/Subjects/computerscience.html#pointer1">Intro to CS</a>
+                            <a href="/Subjects/computerscience.html#pointer2">AP CS A</a>
+                            <a href="/Subjects/computerscience.html#pointer3">Project Course</a>
+                            <!--Add statistics and graphics about the need for CS teachers-->
+                        </div>
+                    </figure>
+                    <div class="subheader  blocked"><a href="./Subjects/mathematics.html">_Mathematics</a></div>
+
+                    <figure class="hover-menu">
+                        <img src="./mathstockphoto.png"/>
+                        <div>
+                            <a href="#">7th Grade</a>
+                            <a href="#">Pre-Calculus</a>
+                            <a href="#">Statistics</a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="section">
+                <a class="heading unblocked", id = "Experience">Experience</a>
+                <div class="subheader">_Lehman Alternative High School</div>
+                <div class="text">Student Teacher</div>
+                <div class="text">Pre-Calculus, Computer Science, Statistics, Geometry</div>
+                <div class="subheader">_Lansing Middle School</div>
+                <div class="text">Student Teacher</div>
+                <div class="text">Math 7, Advanced Math 7</div>
+                <div class="subheader">_Marjorie Lee Browne STEM Discovery Camp</div>
+                <div class="text">Marjorie Lee Browne STEM Education Fellow</div>
+                <div class="text">Computer Science Teacher</div>   
+                <div class="subheader">_Open Doors English</div>
+                <div class="text">Student Assistant</div>
+                <div class="text">Adult English Language Learners</div>   
+            </div>
+            <div class="section block">
+                <a class="heading blocked", id="Education">Education</a>
+                <div class="container2">
+                    <div class="box">
+                        <div class="subheader blocked">_Master of Arts in Teaching</div>
+                        <div class="text">
+                            <p>Adolescent Education (Mathematics)</p>
+                            <p>Ithaca College • Ithaca, NY</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="subheader blocked">_Bachelors of Science</div>
+                        <div class="text">
+                            <p>Computer Science. Education minor</p>
+                            <p>Cornell University • Ithaca, NY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="right">This site has been coded by Chris Park and published with GitHub Pages.</div>
+            
+        </div>
+        <div class="email">
+            <a href="mailto:chrsc.park@gmail.com" class="information">chsc.park@gmail.com</a>
+            <div class="vl"></div>
+        </div>
 </body>
 </html>

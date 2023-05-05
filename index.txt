@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="iwdth=device-width, initial-scale=1.0">
+        <title>Chris Park</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+<body>
+    <div class="header">
+    <!-- header with tabs and features -->
+    <a href="../Chrispier.github.io/index.html"><div class="logo">Chris S Park</div></a>
+        <!-- Goes back to the home page -->
+        <ul>
+            <li><a href="./educator.html">Educator</a></li>
+            <li><a href="./programmer.html">Programmer</a></li>
+            <li><a href="./more.html">More</a></li>
+        </ul>
+    <!-- TODO: make a light/dark mode button and a contact me -->
+    </div>
+
+    <div class="body">
+        <div class="sidebar">
+
+        </div>
+        <div class="info">Hello, I am Chris S Park. Welcome to my website.</div>
+    </div>
+    <div class="footer">
+        <div class="right">(:</div>
+    </div>
+</body>
+</html>
