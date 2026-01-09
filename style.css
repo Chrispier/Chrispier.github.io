@@ -21,7 +21,7 @@ body{
 
 @font-face {
     font-family: robotoFont;
-    src: url(../RobotoMono-VariableFont_wght.ttf);
+    src: url(Fonts/RobotoMono-VariableFont_wght.ttf);
   }
 
 .header{
