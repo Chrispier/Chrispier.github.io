@@ -29,9 +29,9 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: baseline;
-    padding: 16px;
-    padding-top: 16px;
-    color: #8C8A93;
+    padding: 8px;
+    padding-top: 8px;
+   /* color: #8C8A93;*/
     background-color: #ede9f8;
     /*fix the header at the top*/
     position:fixed;
@@ -45,7 +45,7 @@ body{
 
 /* Dropdown Button */
 .dropbtn {
-
+    background-clip: content-box;
     border: none;
   }
   
@@ -68,7 +68,8 @@ body{
   /* Links inside the dropdown */
   .dropdown-content a {
     color: #8C8A93;
-    padding: 12px 16px;
+    padding: 8px 12px;
+    
     text-decoration: none;
     display: block;
   }
@@ -90,12 +91,18 @@ body{
     flex-shrink: none;
 }
 
+.dbtnheader{
+    background-color: #ede9f8;
+
+
+}
+
 .logo{
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
     color:#81667A;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 24px;
     transition: 0.4s;
 }
 
@@ -103,6 +110,8 @@ a{
     font-size: clamp(12px, 2vw, 18px);
     font-family:robotoFont, sans-serif;
     color:#8C8A93;
+    background-color: transparent;
+    
     text-decoration: none;
 }
 
@@ -171,6 +180,7 @@ a{
 
 .contents a, .text a{
     font-size: 18px;
+    
 }
 
 /*each section in the page*/
@@ -184,6 +194,8 @@ a{
 .heading.unblocked{
     font-size: 30px;
     color: #58498b;
+    background-color: transparent;
+
     font-weight: 500;
 }
 
@@ -202,6 +214,7 @@ a{
 .heading.blocked{
     font-size: 30px;
     color: #dcd2ff;
+    background-color: transparent;
     font-weight: 500;
 }
 
@@ -350,6 +363,7 @@ ul{
     text-decoration: none;
     opacity: 0.8;
     padding: 5px 15px;
+    
     position: relative;
     object-fit: contain;
   }
@@ -399,7 +413,8 @@ ul{
     bottom: 10vh;
     right: 10vw;
     font-size: 14px;
-    color: #728b56
+    color: #728b56;
+    background-color: transparent;
 }
 .information:hover{
     transition: 0.4s;
@@ -412,18 +427,22 @@ ul{
     height: 5vh;
     position: fixed;
     bottom: 0;
-    right: 10.5vw;
+    right: 10.8vw;
     height: 6vh;
 }
 
 button{
     border:none;
     padding: none;
+    background-clip: content-box;
     color: #8C8A93;
 }
 #theme-btn {
     font-size: 1.1rem;
+    margin-top: .4rem;
     cursor: pointer;
+    background: none;
+    
 }
 
 #theme-btn:hover {

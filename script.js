@@ -2,7 +2,9 @@ function darkMode() {
     const themeBtn = document.getElementById("theme-btn");
     themeBtn.onclick = () => {
           themeBtn.classList.toggle("fa-sun");
-          if (themeBtn.classList.contains("fa-sun")) {
+          themeBtn.classList.toggle("fa-moon");
+
+          if (themeBtn.classList.contains("fa-solid fa-sun")) {
             document.body.classList.add("darkModeBody");
           } else {
             document.body.classList.remove("darkModeBody");
@@ -16,11 +18,11 @@ function darkMode() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       document.getElementById("logo").style.fontSize = "20px";
       document.getElementById("logo").textContent = "CSP";
-      document.getElementById("header").style.paddingTop = "16px";
+      document.getElementById("header").style.paddingTop = "12px";
     } else {
-      document.getElementById("logo").style.fontSize = "36px";
+      document.getElementById("logo").style.fontSize = "24px";
       document.getElementById("logo").textContent = "Chris S Park";
-      document.getElementById("header").style.paddingTop = "24px";
+      document.getElementById("header").style.paddingTop = "16px";
     }
   } 
 
