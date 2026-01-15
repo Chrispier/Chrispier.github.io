@@ -18,10 +18,13 @@ function darkMode() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       document.getElementById("logo").style.fontSize = "20px";
       document.getElementById("logo").textContent = "CSP";
+      document.getElementById("logo").color = "#DA70D6";
       document.getElementById("header").style.paddingTop = "12px";
     } else {
       document.getElementById("logo").style.fontSize = "24px";
       document.getElementById("logo").textContent = "Chris S Park";
+      document.getElementById("logo").color = "#8C8A93";
+
       document.getElementById("header").style.paddingTop = "16px";
     }
   } 

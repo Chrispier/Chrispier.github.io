@@ -1,15 +1,62 @@
+:root {
+    --mouse-trail: #8BA0B6;
+
+    --light-1: #DBDBDB;
+    --light-2: #515660;
+    --light-3: #8BA0B6;
+    --light-4: #AC92A7;
+
+    --light-accent-1: #169FFF;
+    --light-accent-2: #DA70D6;
+    --light-accent-3: #FFD602; 
+
+    --header-color: #1A1B1D;
+
+    --font: #8C8A93;
+
+    --dark-1: #1A1B1D;
+    --dark-2: #222224;
+    --dark-3: #131517;
+
+    --blank: white;
+    --blank-dark: #222224;
+}
+
+/*
+    --mouse-trail: #8C8A93;
+
+    --light-1: #e8e7ee;
+    --light-2: #f1f1f1;
+    --light-3: #a29abe;
+
+    --header-color: #ede9f8;
+
+    --font: #8C8A93;
+
+    --dark-1: #58498b;
+    --dark-2: #81667A;
+
+    --hover: #BB86FC;
+
+    --2-dark-1: #728b56;
+    --2-light-1: #bed7a1;
+    --2-light-2: #92B4A7;
+    --blank: white;
+    --blank-dark: rgb(133, 133, 133);
+    */
+
 .MouseTrail {
     position: absolute;
     height: 7px; width: 7px;
     border-radius: 4px;
     pointer-events: none;
-    background: #8C8A93;
+    background: var(--mouse-trail);
     z-index: 999;
   }
 
 body{
     height:100vh;
-    background-color: #e8e7ee;
+    background-color: var(--light-1);
     margin:0;
     cursor: none;
     font-family: robotoFont, sans-serif;
@@ -32,7 +79,7 @@ body{
     padding: 8px;
     padding-top: 8px;
    /* color: #8C8A93;*/
-    background-color: #ede9f8;
+    background-color: var(--header-color);
     /*fix the header at the top*/
     position:fixed;
     top:0;
@@ -59,15 +106,17 @@ body{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--light-2);
     min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 8px 0px var(--blank-dark);
+
+
     z-index: 1;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: #8C8A93;
+    color: var(--font);
     padding: 8px 12px;
     
     text-decoration: none;
@@ -75,7 +124,7 @@ body{
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: var(--blank);}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
@@ -92,15 +141,14 @@ body{
 }
 
 .dbtnheader{
-    background-color: #ede9f8;
-
+    background-color: var(--header-color);
 
 }
 
 .logo{
     margin-left: 8px;
     margin-right: 8px;
-    color:#81667A;
+    color: var(--light-accent-2);
     font-weight: 500;
     font-size: 24px;
     transition: 0.4s;
@@ -109,7 +157,7 @@ body{
 a{
     font-size: clamp(12px, 2vw, 18px);
     font-family:robotoFont, sans-serif;
-    color:#8C8A93;
+    color: var(--font);
     background-color: transparent;
     
     text-decoration: none;
@@ -120,7 +168,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:#728b56;
+    color: var(--dark-3);
     /*Center the DIV*/
     margin: 0 auto;
     /*This mkaes it so the text doesnt go over the header and footer*/
@@ -129,13 +177,13 @@ a{
 
 .name{
     font-size: var(--fz-xl);
-    color:#726c88;
+    color:var(--dark-1);
 }
 
 .namebig{
     font-size: clamp(40px, 8vw, 80px);
     font-weight: bold;
-    color:#58498b;
+    color: var(--dark-1);
 }
 
 .intro{
@@ -169,13 +217,13 @@ a{
     padding-top: 50px;
 }
 .index.block{
-    background-color: #ffffff;
+    background-color: var(--blank);
 }
 
 .title{
     font-size: 48px;
     font-weight: 500;
-    color: #361d8f; /*8C8A93*/    
+    color: var(--dark-1); /*8C8A93*/    
 }
 
 .contents a, .text a{
@@ -193,38 +241,39 @@ a{
 
 .heading.unblocked{
     font-size: 30px;
-    color: #58498b;
+    color: var(--dark-1);
     background-color: transparent;
 
     font-weight: 500;
 }
 
 .subheader{
-    color: #726c88;
+    color:  var(--font);
     font-weight: 600;
     font-size: 18px;
     padding-top: 15px;
 }
 
 .section.block{
-    background-color: #58498b !important;
-    color:white !important;
+    background-color: var(--dark-1) !important;
+    color: var(--blank) !important;
 }
 
 .heading.blocked{
     font-size: 30px;
-    color: #dcd2ff;
+    color: var(--light-1);
     background-color: transparent;
     font-weight: 500;
 }
 
 .subheader.blocked{
-    color:#c1cefe;
+    color: var(--light-accent-1);
 }
 
 strong{
-    color: #b49cc2;
+    color: var(--light-accent-3);
 }
+/* bullet headers */
 
 ul{
     list-style: none !important;
@@ -234,8 +283,10 @@ ul{
     display: inline-block; width: 1em;
     list-style: none;
     margin-left: -1em;
-    color:#a29abe;
+    color: var(--light-accent-3);
 }
+/* bullet point*/
+
 
 .container{
     display:grid;
@@ -294,7 +345,6 @@ ul{
     top: 0;
     left: 0;
     opacity: 0.7;
-    background-color: #0057e3;
 }
 
 #csc:hover{
@@ -316,7 +366,7 @@ ul{
     max-width: 480px;
     max-height: 290px;
     width: 100%;
-    background: #8C8A93;
+    background: var(--font);
     text-align: center;
     box-sizing: border-box;
   }
@@ -343,7 +393,7 @@ ul{
     width: 120px;
     height: 100%;
     padding: 8px 4px;
-    background: rgb(111, 111, 111);
+    background: var(--dark-2);
     transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -359,7 +409,7 @@ ul{
     display: block;
     line-height: 1.5;
     font-size: 14px;
-    color: #fff;
+    color: var(--blank);
     text-decoration: none;
     opacity: 0.8;
     padding: 5px 15px;
@@ -389,14 +439,14 @@ ul{
     flex-shrink: none;
     justify-content: center;
     align-items: center;
-    min-height: 20vh;
-    background: #D1F0B1;
-    color:#92B4A7;
+    min-height: 10vh;
+    background: var(--light-4);
+    color: var(--light-accent-3);
     width: 100%;
     margin-bottom: 0;
 }
 .right{
-    color:#5b7269;
+    color: var(--dark-3);
     font-size: 14px;
     margin:0;
 }
@@ -413,16 +463,16 @@ ul{
     bottom: 10vh;
     right: 10vw;
     font-size: 14px;
-    color: #728b56;
+    color: var(--light-accent-1);
     background-color: transparent;
 }
 .information:hover{
     transition: 0.4s;
     bottom: 11vh;
-    color: #add382;
+    color: var(--light-accent-2);
 }
 .vl{
-    border-left: 2px solid #728b56;
+    border-left: 2px solid var(--light-accent-1);
     justify-content: center;
     height: 5vh;
     position: fixed;
@@ -435,7 +485,8 @@ button{
     border:none;
     padding: none;
     background-clip: content-box;
-    color: #8C8A93;
+    background: transparent;
+    color: var(--font);
 }
 #theme-btn {
     font-size: 1.1rem;
@@ -446,15 +497,15 @@ button{
 }
 
 #theme-btn:hover {
-    color: #BB86FC;
+    color: var(--light-accent-2);
 }
 
 a:hover{
-    color: #BB86FC;
+    color: var(--light-accent-2);
 
 }
 
 .darkModeBody {
-    background-color: rgb(29, 29, 29);
-    color: white;
+    background-color: var(--blank-dark);
+    color: var(--blank);
   }
